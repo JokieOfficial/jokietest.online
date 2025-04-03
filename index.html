@@ -3,131 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - Action-Packed Survival Game | Play Online</title>
-    <meta name="description" content="Survive endless waves of monsters in this thrilling action-packed game. Play Monster Survivors online for free now!">
-    <link rel="canonical" href="https://jokietest.online" />
+    <title>Click Speed Test | Measure Your Reaction Time | jokietest.online</title>
+    <meta name="description" content="Test and measure how fast you can click with our free online click speed test tool. Perfect for gamers and anyone looking to improve their reaction time.">
+    <link rel="canonical" href="https://jokietest.online">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --apple-blue: #007AFF;
-            --apple-red: #FF3B30;
-            --apple-green: #34C759;
-            --apple-yellow: #FFCC00;
-            --apple-orange: #FF9500;
-            --apple-purple: #AF52DE;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            gray: '#8E8E93',
+                            lightGray: '#F2F2F7',
+                            green: '#34C759',
+                            red: '#FF3B30',
+                        }
+                    }
+                }
+            }
         }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        .game-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        }
-        
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .bg-apple-gradient {
-            background: linear-gradient(135deg, var(--apple-blue), var(--apple-purple));
-        }
-    </style>
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <header class="bg-apple-gradient text-white shadow-lg">
-        <div class="container mx-auto px-4 py-6 md:py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Monster Survivors</h1>
-                    <p class="text-xl text-white/90">Face endless waves of monsters in this thrilling survival adventure!</p>
-                </div>
-                <div class="mt-4 md:mt-0">
-                    <a href="#play" class="bg-white text-blue-600 hover:bg-blue-50 font-bold py-2 px-6 rounded-full shadow-md transition duration-300">Play Now</a>
-                </div>
-            </div>
+<body class="bg-white min-h-screen font-sans">
+    <header class="py-6 px-4 md:px-8 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900">Click Speed Test</h1>
+            <p class="text-center text-gray-600 mt-2">Measure how fast you can click!</p>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
-        <section id="play" class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800 border-l-4 border-blue-500 pl-3">Play Monster Survivors Online</h2>
-            <div class="game-container shadow-xl rounded-lg overflow-hidden">
-                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" class="responsive-iframe" allowfullscreen></iframe>
+    <main class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">How It Works</h2>
+            <div class="bg-apple-lightGray rounded-xl p-6">
+                <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                    <li>Click the test area below to start the timer</li>
+                    <li>Click again to stop the timer</li>
+                    <li>Your reaction time will be displayed in milliseconds</li>
+                    <li>Try multiple times to see your average speed</li>
+                </ol>
             </div>
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800 border-l-4 border-green-500 pl-3">Game Overview</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <p class="mb-4">Monster Survivors is an action-packed survival game where you must fight against endless waves of monsters. Test your skills, upgrade your character, and see how long you can survive in this challenging world.</p>
-                <p class="mb-4">With simple controls and addictive gameplay, Monster Survivors offers hours of entertainment as you battle increasingly difficult enemies while collecting power-ups and special abilities.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                        <h3 class="font-bold text-lg text-blue-700 mb-2">Game Features</h3>
-                        <ul class="list-disc pl-5 space-y-1">
-                            <li>Endless survival gameplay</li>
-                            <li>Multiple character upgrades</li>
-                            <li>Various monster types</li>
-                            <li>Increasing difficulty</li>
-                            <li>Special power-ups and abilities</li>
-                        </ul>
-                    </div>
-                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
-                        <h3 class="font-bold text-lg text-purple-700 mb-2">How to Play</h3>
-                        <ul class="list-disc pl-5 space-y-1">
-                            <li>Use WASD or arrow keys to move</li>
-                            <li>Automatically attack nearby monsters</li>
-                            <li>Collect experience points to level up</li>
-                            <li>Choose upgrades wisely</li>
-                            <li>Survive as long as possible!</li>
-                        </ul>
-                    </div>
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Test Your Speed</h2>
+            <div id="test-area" class="w-full h-64 md:h-96 rounded-xl flex items-center justify-center cursor-pointer transition-colors duration-300 bg-apple-blue text-white text-xl md:text-2xl font-medium">
+                Click to Start
+            </div>
+            
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-apple-lightGray rounded-xl p-4">
+                    <p class="text-gray-600 text-sm mb-1">Current Time</p>
+                    <p id="current-time" class="text-2xl font-bold text-apple-blue">0 ms</p>
+                </div>
+                <div class="bg-apple-lightGray rounded-xl p-4">
+                    <p class="text-gray-600 text-sm mb-1">Best Time</p>
+                    <p id="best-time" class="text-2xl font-bold text-apple-green">0 ms</p>
+                </div>
+                <div class="bg-apple-lightGray rounded-xl p-4">
+                    <p class="text-gray-600 text-sm mb-1">Average Time</p>
+                    <p id="average-time" class="text-2xl font-bold text-gray-900">0 ms</p>
+                </div>
+            </div>
+            
+            <button id="reset-button" class="mt-6 px-6 py-3 bg-apple-red text-white font-medium rounded-lg hover:opacity-90 transition-opacity">
+                Reset Results
+            </button>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Why Test Your Click Speed?</h2>
+            <div class="bg-apple-lightGray rounded-xl p-6">
+                <div class="space-y-4 text-gray-700">
+                    <p>Testing your click speed can be beneficial for several reasons:</p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li>Gamers can improve their performance in fast-paced games</li>
+                        <li>Track your progress over time as you practice</li>
+                        <li>Compare your reaction times with friends</li>
+                        <li>Identify potential issues with motor skills or coordination</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800 border-l-4 border-orange-500 pl-3">Game Tips</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-5 rounded-lg shadow-md border-t-4 border-yellow-500">
-                    <h3 class="font-bold text-lg mb-2">Beginner Tips</h3>
-                    <p>Focus on movement speed upgrades early on to avoid being surrounded. Keep moving and don't let monsters corner you!</p>
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Tips to Improve Your Click Speed</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-apple-lightGray rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Practice Regularly</h3>
+                    <p class="text-gray-700">Like any skill, regular practice can help improve your click speed and reaction time.</p>
                 </div>
-                <div class="bg-white p-5 rounded-lg shadow-md border-t-4 border-green-500">
-                    <h3 class="font-bold text-lg mb-2">Mid-Game Strategy</h3>
-                    <p>Balance your offense and defense upgrades. By mid-game, having a mix of attack power and survivability is crucial.</p>
+                <div class="bg-apple-lightGray rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Use the Right Equipment</h3>
+                    <p class="text-gray-700">A good mouse or touchpad can make a significant difference in your performance.</p>
                 </div>
-                <div class="bg-white p-5 rounded-lg shadow-md border-t-4 border-red-500">
-                    <h3 class="font-bold text-lg mb-2">Advanced Tactics</h3>
-                    <p>Learn enemy spawn patterns and plan your movements. Create space between monster waves to maximize survival time.</p>
+                <div class="bg-apple-lightGray rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Stay Focused</h3>
+                    <p class="text-gray-700">Minimize distractions to get the best results during your speed test.</p>
+                </div>
+                <div class="bg-apple-lightGray rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Warm Up</h3>
+                    <p class="text-gray-700">Do some finger stretches before testing to improve flexibility and reduce the risk of strain.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h2 class="text-xl font-bold mb-2">Monster Survivors</h2>
-                    <p class="text-gray-400">© 2025 JokieTest. All rights reserved.</p>
-                </div>
-                <div>
-                    <p class="text-gray-400">Play the best online games at <a href="https://jokietest.online" class="text-blue-400 hover:text-blue-300">jokietest.online</a></p>
-                </div>
-            </div>
+    <footer class="bg-apple-lightGray py-8 px-4 md:px-8 mt-12">
+        <div class="max-w-4xl mx-auto text-center text-gray-600">
+            <p>© 2025 jokietest.online - All Rights Reserved</p>
+            <p class="mt-2 text-sm">A free tool to measure your click speed and reaction time.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testArea = document.getElementById('test-area');
+            const currentTimeDisplay = document.getElementById('current-time');
+            const bestTimeDisplay = document.getElementById('best-time');
+            const averageTimeDisplay = document.getElementById('average-time');
+            const resetButton = document.getElementById('reset-button');
+            
+            let isRunning = false;
+            let startTime = 0;
+            let times = [];
+            let bestTime = Infinity;
+            
+            testArea.addEventListener('click', function() {
+                if (!isRunning) {
+                    // Start the timer
+                    isRunning = true;
+                    startTime = Date.now();
+                    testArea.textContent = 'Click again to stop';
+                    testArea.classList.remove('bg-apple-blue');
+                    testArea.classList.add('bg-apple-green');
+                } else {
+                    // Stop the timer and calculate the time
+                    isRunning = false;
+                    const endTime = Date.now();
+                    const timeTaken = endTime - startTime;
+                    
+                    // Update current time
+                    currentTimeDisplay.textContent = `${timeTaken} ms`;
+                    
+                    // Add to times array
+                    times.push(timeTaken);
+                    
+                    // Update best time
+                    if (timeTaken < bestTime) {
+                        bestTime = timeTaken;
+                        bestTimeDisplay.textContent = `${bestTime} ms`;
+                    }
+                    
+                    // Calculate and update average time
+                    const average = Math.round(times.reduce((sum, time) => sum + time, 0) / times.length);
+                    averageTimeDisplay.textContent = `${average} ms`;
+                    
+                    // Reset for next test
+                    testArea.textContent = 'Click to start again';
+                    testArea.classList.remove('bg-apple-green');
+                    testArea.classList.add('bg-apple-blue');
+                }
+            });
+            
+            resetButton.addEventListener('click', function() {
+                // Reset all values
+                isRunning = false;
+                times = [];
+                bestTime = Infinity;
+                currentTimeDisplay.textContent = '0 ms';
+                bestTimeDisplay.textContent = '0 ms';
+                averageTimeDisplay.textContent = '0 ms';
+                testArea.textContent = 'Click to Start';
+                testArea.classList.remove('bg-apple-green');
+                testArea.classList.add('bg-apple-blue');
+            });
+        });
+    </script>
 </body>
 </html>
