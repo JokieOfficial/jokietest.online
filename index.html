@@ -194,36 +194,8 @@
         <section id="discussion" class="mt-16">
             <h2 class="text-2xl font-bold mb-4 text-gray-900">Discussion Board</h2>
             <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md p-6">
-                <div class="space-y-6 mb-8">
-                    <!-- Existing comments -->
-                    <div class="border-b border-gray-100 pb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="font-medium mr-2">user1</span>
-                            <span class="flag-icon flag-icon-jp text-sm"></span>
-                            <span class="text-gray-400 text-sm ml-2">Apr 11, 2025</span>
-                        </div>
-                        <p class="text-gray-700">Just beat my personal record! Been practicing for a week and finally got under 150ms. The key is to really focus on the color change.</p>
-                    </div>
-                    <div class="border-b border-gray-100 pb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="font-medium mr-2">user2</span>
-                            <span class="flag-icon flag-icon-us text-sm"></span>
-                            <span class="text-gray-400 text-sm ml-2">Apr 12, 2025</span>
-                        </div>
-                        <p class="text-gray-700">This test is great for warming up before gaming sessions. I play competitive FPS and this helps me get in the zone.</p>
-                    </div>
-                    <div class="border-b border-gray-100 pb-4">
-                        <div class="flex items-center mb-2">
-                            <span class="font-medium mr-2">user3</span>
-                            <span class="flag-icon flag-icon-gb text-sm"></span>
-                            <span class="text-gray-400 text-sm ml-2">Apr 10, 2025</span>
-                        </div>
-                        <p class="text-gray-700">Anyone know if clicking on a touchpad vs. a mouse makes a difference? I feel like I'm faster with a mouse but would love to see some data on this.</p>
-                    </div>
-                </div>
-                
                 <!-- Comment form -->
-                <div>
+                <div class="mb-8 border-b border-gray-200 pb-8">
                     <h3 class="text-lg font-medium mb-3">Leave a comment</h3>
                     <form class="space-y-4">
                         <div>
@@ -238,6 +210,137 @@
                             Post Comment
                         </button>
                     </form>
+                </div>
+                
+                <!-- Comments section with pagination -->
+                <div>
+                    <h3 class="text-lg font-medium mb-4 flex items-center">
+                        <span>Recent Comments</span>
+                        <span class="text-sm text-gray-500 ml-2">(Showing newest first)</span>
+                    </h3>
+                    
+                    <div id="comments-container">
+                        <!-- Page 1 comments (newest to oldest) -->
+                        <div id="comments-page-1" class="space-y-6">
+                            <!-- Comment 1 (newest) -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user7</span>
+                                    <span class="flag-icon flag-icon-fr text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 13, 2025</span>
+                                </div>
+                                <p class="text-gray-700">Just discovered this site today and I'm addicted! I've been testing my click speed for the past hour trying to beat my 187ms record.</p>
+                            </div>
+                            
+                            <!-- Comment 2 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user6</span>
+                                    <span class="flag-icon flag-icon-au text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 12, 2025</span>
+                                </div>
+                                <p class="text-gray-700">Have any of you noticed that your click speed is better at certain times of day? I seem to be faster in the evenings than mornings.</p>
+                            </div>
+                            
+                            <!-- Comment 3 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user2</span>
+                                    <span class="flag-icon flag-icon-us text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 12, 2025</span>
+                                </div>
+                                <p class="text-gray-700">This test is great for warming up before gaming sessions. I play competitive FPS and this helps me get in the zone.</p>
+                            </div>
+                            
+                            <!-- Comment 4 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user1</span>
+                                    <span class="flag-icon flag-icon-jp text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 11, 2025</span>
+                                </div>
+                                <p class="text-gray-700">Just beat my personal record! Been practicing for a week and finally got under 150ms. The key is to really focus on the color change.</p>
+                            </div>
+                            
+                            <!-- Comment 5 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user3</span>
+                                    <span class="flag-icon flag-icon-gb text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 10, 2025</span>
+                                </div>
+                                <p class="text-gray-700">Anyone know if clicking on a touchpad vs. a mouse makes a difference? I feel like I'm faster with a mouse but would love to see some data on this.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Page 2 comments (hidden initially) -->
+                        <div id="comments-page-2" class="space-y-6 hidden">
+                            <!-- Comment 6 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user4</span>
+                                    <span class="flag-icon flag-icon-de text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 9, 2025</span>
+                                </div>
+                                <p class="text-gray-700">I've been using this to track my reflexes after starting a new exercise routine. Definitely seeing improvement in the last two weeks!</p>
+                            </div>
+                            
+                            <!-- Comment 7 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user8</span>
+                                    <span class="flag-icon flag-icon-br text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 9, 2025</span>
+                                </div>
+                                <p class="text-gray-700">My younger brother is consistently faster than me by about 20ms. Not fair! Anyone have tips for improving?</p>
+                            </div>
+                            
+                            <!-- Comment 8 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user5</span>
+                                    <span class="flag-icon flag-icon-ca text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 8, 2025</span>
+                                </div>
+                                <p class="text-gray-700">Would be cool if there was a way to create private leaderboards to compete with friends! Great site otherwise.</p>
+                            </div>
+                            
+                            <!-- Comment 9 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user9</span>
+                                    <span class="flag-icon flag-icon-kr text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 7, 2025</span>
+                                </div>
+                                <p class="text-gray-700">Our esports team uses this as part of our daily warm-up routine. Simple but effective for getting those reflexes ready.</p>
+                            </div>
+                            
+                            <!-- Comment 10 -->
+                            <div class="border-b border-gray-100 pb-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-medium mr-2">user10</span>
+                                    <span class="flag-icon flag-icon-it text-sm"></span>
+                                    <span class="text-gray-400 text-sm ml-2">Apr 6, 2025</span>
+                                </div>
+                                <p class="text-gray-700">I'm a UI designer and I'm impressed by the clean interface. Makes the test easy to use and focus on what matters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination controls -->
+                    <div class="mt-6 flex justify-between items-center">
+                        <div class="text-sm text-gray-500">
+                            <span id="current-page-indicator">Page 1 of 2</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button id="prev-page" class="px-3 py-1 bg-gray-200 rounded text-gray-600 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                                Previous
+                            </button>
+                            <button id="next-page" class="px-3 py-1 bg-apple-blue text-white rounded hover:bg-blue-600">
+                                Next
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -344,6 +447,50 @@
                     alert('You need to complete at least one test before submitting a score');
                 }
             });
+            
+            // Comment pagination functionality
+            const prevPageButton = document.getElementById('prev-page');
+            const nextPageButton = document.getElementById('next-page');
+            const commentsPage1 = document.getElementById('comments-page-1');
+            const commentsPage2 = document.getElementById('comments-page-2');
+            const currentPageIndicator = document.getElementById('current-page-indicator');
+            let currentPage = 1;
+            const totalPages = 2;
+            
+            function updatePaginationUI() {
+                // Update page indicator text
+                currentPageIndicator.textContent = `Page ${currentPage} of ${totalPages}`;
+                
+                // Enable/disable buttons based on current page
+                prevPageButton.disabled = currentPage === 1;
+                nextPageButton.disabled = currentPage === totalPages;
+                
+                // Show/hide comment pages
+                if (currentPage === 1) {
+                    commentsPage1.classList.remove('hidden');
+                    commentsPage2.classList.add('hidden');
+                } else if (currentPage === 2) {
+                    commentsPage1.classList.add('hidden');
+                    commentsPage2.classList.remove('hidden');
+                }
+            }
+            
+            prevPageButton.addEventListener('click', function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updatePaginationUI();
+                }
+            });
+            
+            nextPageButton.addEventListener('click', function() {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updatePaginationUI();
+                }
+            });
+            
+            // Initialize pagination UI
+            updatePaginationUI();
         });
     </script>
 </body>
