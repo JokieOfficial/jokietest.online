@@ -1,497 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Speed Test | Measure Your Reaction Time | jokietest.online</title>
-    <meta name="description" content="Test and measure how fast you can click with our free online click speed test tool. Perfect for gamers and anyone looking to improve their reaction time.">
-    <link rel="canonical" href="https://jokietest.online">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7HZ1MVR7S"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-G7HZ1MVR7S');
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        apple: {
-                            blue: '#007AFF',
-                            gray: '#8E8E93',
-                            lightGray: '#F2F2F7',
-                            green: '#34C759',
-                            red: '#FF3B30',
-                            orange: '#FF9500',
-                            yellow: '#FFCC00',
-                            purple: '#AF52DE'
-                        }
-                    }
-                }
-            }
+    <title>肠儿医院信息系统</title>
+    <style>
+        /* 基础样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
         }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* 顶部导航 */
+        .top-nav {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e7e7e7;
+            padding: 5px 0;
+        }
+        .top-nav .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-nav-left {
+            display: flex;
+            align-items: center;
+        }
+        .top-nav-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        /* 主导航 */
+        .main-header {
+            background-color: #fff;
+        }
+        .main-header .container {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo {
+            margin-right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-menu li {
+            margin-right: 15px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        .nav-menu a:hover {
+            color: #0066cc;
+        }
+        
+        /* 轮播区域 */
+        .banner {
+            height: 400px;
+            background-color: #e0e0e0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        /* 主要内容区 */
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .content-header {
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .content-more {
+            font-size: 14px;
+            color: #666;
+        }
+        .news-list {
+            list-style: none;
+            padding: 0;
+        }
+        .news-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .news-list li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .news-list li a:hover {
+            color: #0066cc;
+        }
+        .news-date {
+            float: right;
+            color: #999;
+        }
+        
+        /* 底部区域 */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-info {
+            width: 50%;
+        }
+        .footer-links {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links li {
+            margin-bottom: 5px;
+        }
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
-<body class="bg-white min-h-screen font-sans">
-    <header class="py-6 px-4 md:px-8 border-b border-gray-200">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900">Click Speed Test</h1>
-            <p class="text-center text-gray-600 mt-2">How fast are your reflexes?</p>
+<body>
+    <!-- 顶部导航 -->
+    <div class="top-nav">
+        <div class="container">
+            <div class="top-nav-left">
+                <span>欢迎访问肠儿医院信息系统</span>
+            </div>
+            <div class="top-nav-right">
+                <span>今天是：2025年4月14日 星期一</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 主导航 -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">肠儿医院信息系统</div>
+            <ul class="nav-menu">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">医院概况</a></li>
+                <li><a href="#">新闻公告</a></li>
+                <li><a href="#">就医指南</a></li>
+                <li><a href="#">科室介绍</a></li>
+                <li><a href="#">专家团队</a></li>
+                <li><a href="#">健康科普</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
         </div>
     </header>
-
-    <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
-        <nav class="mb-8 flex space-x-2 justify-center">
-            <a href="#test" class="px-4 py-2 bg-apple-blue text-white rounded-lg font-medium">Test Your Speed</a>
-            <a href="#leaderboard" class="px-4 py-2 bg-apple-purple text-white rounded-lg font-medium">Leaderboard</a>
-            <a href="#discussion" class="px-4 py-2 bg-apple-orange text-white rounded-lg font-medium">Discussion</a>
-        </nav>
+    
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="container">
+            <!-- 这里可以放轮播图组件 -->
+        </div>
     </div>
-
-    <main class="max-w-4xl mx-auto px-4 md:px-8 py-8">
-        <section id="test" class="mb-12">
-            <h2 class="text-2xl font-bold mb-4 text-gray-900">How It Works</h2>
-            <div class="bg-apple-lightGray rounded-xl p-6">
-                <ol class="list-decimal list-inside space-y-3 text-gray-700">
-                    <li>Hit the <span class="font-bold text-apple-blue">START</span> button to begin timing</li>
-                    <li>When the screen turns green, click the <span class="font-bold text-apple-green">STOP</span> button as fast as you can</li>
-                    <li>Your reaction time will be shown in milliseconds</li>
-                    <li>Try a few times to see your best score</li>
-                </ol>
+    
+    <!-- 主要内容区 -->
+    <div class="container">
+        <div class="main-content">
+            <div class="content-header">
+                <div class="content-title">医院新闻</div>
+                <div class="content-more"><a href="#">更多></a></div>
             </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-4 text-gray-900">Test Your Speed</h2>
-            <div id="test-container" class="relative">
-                <div id="test-area" class="w-full h-64 md:h-96 rounded-xl flex items-center justify-center cursor-pointer transition-all duration-300 bg-apple-blue text-white text-xl md:text-2xl font-bold shadow-lg">
-                    CLICK TO START
-                </div>
-                <div id="state-indicator" class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full font-medium hidden">Ready</div>
+            <ul class="news-list">
+                <li>
+                    <a href="#">肠儿医院成功举办2025年医疗技术创新研讨会</a>
+                    <span class="news-date">2025-04-10</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院开展全院医护人员专业技能培训活动</a>
+                    <span class="news-date">2025-04-08</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院引进最新医疗设备，提升诊疗水平</a>
+                    <span class="news-date">2025-04-05</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院与多家医疗机构签订合作协议</a>
+                    <span class="news-date">2025-04-01</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院召开2025年度医疗质量提升会议</a>
+                    <span class="news-date">2025-03-28</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="content-header">
+                <div class="content-title">通知公告</div>
+                <div class="content-more"><a href="#">更多></a></div>
             </div>
-            
-            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-apple-lightGray rounded-xl p-5 shadow">
-                    <p class="text-gray-600 text-sm mb-1">Current Time</p>
-                    <p id="current-time" class="text-2xl font-bold text-apple-blue">0 ms</p>
+            <ul class="news-list">
+                <li>
+                    <a href="#">关于肠儿医院2025年劳动节门诊安排的通知</a>
+                    <span class="news-date">2025-04-12</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院2025年度专科护士招聘公告</a>
+                    <span class="news-date">2025-04-09</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院关于开展春季健康义诊活动的通知</a>
+                    <span class="news-date">2025-04-06</span>
+                </li>
+                <li>
+                    <a href="#">关于肠儿医院部分专家门诊调整安排的公告</a>
+                    <span class="news-date">2025-04-03</span>
+                </li>
+                <li>
+                    <a href="#">肠儿医院2025年住院医师规范化培训招生简章</a>
+                    <span class="news-date">2025-03-30</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>肠儿医院 版权所有</p>
+                    <p>地址：肠儿市医疗大道123号</p>
+                    <p>电话：0123-4567890</p>
+                    <p>邮编：100000</p>
                 </div>
-                <div class="bg-apple-lightGray rounded-xl p-5 shadow">
-                    <p class="text-gray-600 text-sm mb-1">Best Time</p>
-                    <p id="best-time" class="text-2xl font-bold text-apple-green">0 ms</p>
-                </div>
-                <div class="bg-apple-lightGray rounded-xl p-5 shadow">
-                    <p class="text-gray-600 text-sm mb-1">Average Time</p>
-                    <p id="average-time" class="text-2xl font-bold text-gray-900">0 ms</p>
-                </div>
-            </div>
-            
-            <div class="mt-6 flex space-x-4">
-                <button id="reset-button" class="px-6 py-3 bg-apple-red text-white font-medium rounded-lg hover:opacity-90 transition-opacity shadow-md">
-                    Reset Results
-                </button>
-                <button id="submit-score" class="px-6 py-3 bg-apple-purple text-white font-medium rounded-lg hover:opacity-90 transition-opacity shadow-md">
-                    Submit to Leaderboard
-                </button>
-            </div>
-        </section>
-
-        <section id="leaderboard" class="mb-12">
-            <h2 class="text-2xl font-bold mb-4 text-gray-900">Global Leaderboard</h2>
-            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Rank</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Country</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Best Time</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">user1</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="flag-icon flag-icon-jp"></span> Japan</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-apple-green font-bold">142 ms</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apr 11, 2025</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">user2</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="flag-icon flag-icon-us"></span> USA</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-apple-green font-bold">156 ms</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apr 12, 2025</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">user3</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="flag-icon flag-icon-gb"></span> UK</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-apple-green font-bold">163 ms</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apr 10, 2025</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">4</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">user4</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="flag-icon flag-icon-de"></span> Germany</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-apple-green font-bold">178 ms</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apr 9, 2025</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">5</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">user5</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><span class="flag-icon flag-icon-ca"></span> Canada</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-apple-green font-bold">182 ms</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apr 8, 2025</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-4 text-gray-900">Why Test Your Click Speed?</h2>
-            <div class="bg-apple-lightGray rounded-xl p-6">
-                <div class="space-y-4 text-gray-700">
-                    <p>There are plenty of good reasons to test and improve your reaction time:</p>
-                    <ul class="list-disc list-inside space-y-2 ml-2">
-                        <li>Gamers need lightning-fast reactions for competitive gameplay</li>
-                        <li>Track your improvements over time with regular practice</li>
-                        <li>Challenge your friends to beat your personal best</li>
-                        <li>It's a fun way to test your reflexes and coordination</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="text-2xl font-bold mb-4 text-gray-900">Pro Tips for Faster Clicks</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-apple-lightGray rounded-xl p-6 shadow">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Find Your Rhythm</h3>
-                    <p class="text-gray-700">Daily practice builds muscle memory. Even 5 minutes a day can make a big difference in your speed over time.</p>
-                </div>
-                <div class="bg-apple-lightGray rounded-xl p-6 shadow">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Gear Matters</h3>
-                    <p class="text-gray-700">A responsive gaming mouse can shave milliseconds off your time compared to a standard office mouse or touchpad.</p>
-                </div>
-                <div class="bg-apple-lightGray rounded-xl p-6 shadow">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Eyes on the Prize</h3>
-                    <p class="text-gray-700">Cut out distractions when testing. The slightest shift in attention can slow your reaction time significantly.</p>
-                </div>
-                <div class="bg-apple-lightGray rounded-xl p-6 shadow">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Loosen Up</h3>
-                    <p class="text-gray-700">Tense muscles react slower. Give your hands a quick stretch before testing to keep them nimble and ready.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="discussion" class="mt-16">
-            <h2 class="text-2xl font-bold mb-4 text-gray-900">Discussion Board</h2>
-            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-md p-6">
-                <!-- Comment form -->
-                <div class="mb-8 border-b border-gray-200 pb-8">
-                    <h3 class="text-lg font-medium mb-3">Leave a comment</h3>
-                    <form class="space-y-4">
-                        <div>
-                            <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
-                            <input type="text" id="username" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-apple-blue focus:border-apple-blue">
-                        </div>
-                        <div>
-                            <label for="comment" class="block text-sm font-medium text-gray-700 mb-1">Your comment</label>
-                            <textarea id="comment" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-apple-blue focus:border-apple-blue"></textarea>
-                        </div>
-                        <button type="submit" class="px-4 py-2 bg-apple-blue text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-apple-blue">
-                            Post Comment
-                        </button>
-                    </form>
-                </div>
-                
-                <!-- Comments section with pagination -->
-                <div>
-                    <h3 class="text-lg font-medium mb-4 flex items-center">
-                        <span>Recent Comments</span>
-                        <span class="text-sm text-gray-500 ml-2">(Showing newest first)</span>
-                    </h3>
-                    
-                    <div id="comments-container">
-                        <!-- Page 1 comments (newest to oldest) -->
-                        <div id="comments-page-1" class="space-y-6">
-                            <!-- Comment 1 (newest) -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user7</span>
-                                    <span class="flag-icon flag-icon-fr text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 13, 2025</span>
-                                </div>
-                                <p class="text-gray-700">Just discovered this site today and I'm addicted! I've been testing my click speed for the past hour trying to beat my 187ms record.</p>
-                            </div>
-                            
-                            <!-- Comment 2 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user6</span>
-                                    <span class="flag-icon flag-icon-au text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 12, 2025</span>
-                                </div>
-                                <p class="text-gray-700">Have any of you noticed that your click speed is better at certain times of day? I seem to be faster in the evenings than mornings.</p>
-                            </div>
-                            
-                            <!-- Comment 3 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user2</span>
-                                    <span class="flag-icon flag-icon-us text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 12, 2025</span>
-                                </div>
-                                <p class="text-gray-700">This test is great for warming up before gaming sessions. I play competitive FPS and this helps me get in the zone.</p>
-                            </div>
-                            
-                            <!-- Comment 4 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user1</span>
-                                    <span class="flag-icon flag-icon-jp text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 11, 2025</span>
-                                </div>
-                                <p class="text-gray-700">Just beat my personal record! Been practicing for a week and finally got under 150ms. The key is to really focus on the color change.</p>
-                            </div>
-                            
-                            <!-- Comment 5 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user3</span>
-                                    <span class="flag-icon flag-icon-gb text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 10, 2025</span>
-                                </div>
-                                <p class="text-gray-700">Anyone know if clicking on a touchpad vs. a mouse makes a difference? I feel like I'm faster with a mouse but would love to see some data on this.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Page 2 comments (hidden initially) -->
-                        <div id="comments-page-2" class="space-y-6 hidden">
-                            <!-- Comment 6 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user4</span>
-                                    <span class="flag-icon flag-icon-de text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 9, 2025</span>
-                                </div>
-                                <p class="text-gray-700">I've been using this to track my reflexes after starting a new exercise routine. Definitely seeing improvement in the last two weeks!</p>
-                            </div>
-                            
-                            <!-- Comment 7 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user8</span>
-                                    <span class="flag-icon flag-icon-br text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 9, 2025</span>
-                                </div>
-                                <p class="text-gray-700">My younger brother is consistently faster than me by about 20ms. Not fair! Anyone have tips for improving?</p>
-                            </div>
-                            
-                            <!-- Comment 8 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user5</span>
-                                    <span class="flag-icon flag-icon-ca text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 8, 2025</span>
-                                </div>
-                                <p class="text-gray-700">Would be cool if there was a way to create private leaderboards to compete with friends! Great site otherwise.</p>
-                            </div>
-                            
-                            <!-- Comment 9 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user9</span>
-                                    <span class="flag-icon flag-icon-kr text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 7, 2025</span>
-                                </div>
-                                <p class="text-gray-700">Our esports team uses this as part of our daily warm-up routine. Simple but effective for getting those reflexes ready.</p>
-                            </div>
-                            
-                            <!-- Comment 10 -->
-                            <div class="border-b border-gray-100 pb-4">
-                                <div class="flex items-center mb-2">
-                                    <span class="font-medium mr-2">user10</span>
-                                    <span class="flag-icon flag-icon-it text-sm"></span>
-                                    <span class="text-gray-400 text-sm ml-2">Apr 6, 2025</span>
-                                </div>
-                                <p class="text-gray-700">I'm a UI designer and I'm impressed by the clean interface. Makes the test easy to use and focus on what matters.</p>
-                            </div>
-                        </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>快速链接</h4>
+                        <ul>
+                            <li><a href="#">网站地图</a></li>
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">法律声明</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
                     </div>
-                    
-                    <!-- Pagination controls -->
-                    <div class="mt-6 flex justify-between items-center">
-                        <div class="text-sm text-gray-500">
-                            <span id="current-page-indicator">Page 1 of 2</span>
-                        </div>
-                        <div class="flex space-x-2">
-                            <button id="prev-page" class="px-3 py-1 bg-gray-200 rounded text-gray-600 hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
-                                Previous
-                            </button>
-                            <button id="next-page" class="px-3 py-1 bg-apple-blue text-white rounded hover:bg-blue-600">
-                                Next
-                            </button>
-                        </div>
+                    <div>
+                        <h4>在线服务</h4>
+                        <ul>
+                            <li><a href="#">预约挂号</a></li>
+                            <li><a href="#">查询报告</a></li>
+                            <li><a href="#">医保政策</a></li>
+                            <li><a href="#">常见问题</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="bg-apple-lightGray py-8 px-4 md:px-8 mt-12">
-        <div class="max-w-4xl mx-auto text-center text-gray-600">
-            <p>© 2025 jokietest.online - All Rights Reserved</p>
-            <p class="mt-2 text-sm">The ultimate online reaction timer for gamers and speed enthusiasts.</p>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const testArea = document.getElementById('test-area');
-            const stateIndicator = document.getElementById('state-indicator');
-            const currentTimeDisplay = document.getElementById('current-time');
-            const bestTimeDisplay = document.getElementById('best-time');
-            const averageTimeDisplay = document.getElementById('average-time');
-            const resetButton = document.getElementById('reset-button');
-            const submitScoreButton = document.getElementById('submit-score');
-            
-            let isRunning = false;
-            let startTime = 0;
-            let times = [];
-            let bestTime = Infinity;
-            
-            testArea.addEventListener('click', function() {
-                if (!isRunning) {
-                    // Start the timer
-                    isRunning = true;
-                    startTime = Date.now();
-                    
-                    // Change styles to make it clear we're in "stop" mode
-                    testArea.textContent = 'CLICK TO STOP';
-                    testArea.classList.remove('bg-apple-blue');
-                    testArea.classList.add('bg-apple-green');
-                    testArea.classList.add('scale-105');
-                    
-                    // Show status indicator
-                    stateIndicator.textContent = 'Running';
-                    stateIndicator.classList.remove('hidden', 'bg-white');
-                    stateIndicator.classList.add('bg-apple-green', 'text-white');
-                    stateIndicator.classList.add('animate-pulse');
-                } else {
-                    // Stop the timer and calculate the time
-                    isRunning = false;
-                    const endTime = Date.now();
-                    const timeTaken = endTime - startTime;
-                    
-                    // Update current time
-                    currentTimeDisplay.textContent = `${timeTaken} ms`;
-                    
-                    // Add to times array
-                    times.push(timeTaken);
-                    
-                    // Update best time
-                    if (timeTaken < bestTime) {
-                        bestTime = timeTaken;
-                        bestTimeDisplay.textContent = `${bestTime} ms`;
-                        bestTimeDisplay.classList.add('animate-pulse');
-                        setTimeout(() => {
-                            bestTimeDisplay.classList.remove('animate-pulse');
-                        }, 1000);
-                    }
-                    
-                    // Calculate and update average time
-                    const average = Math.round(times.reduce((sum, time) => sum + time, 0) / times.length);
-                    averageTimeDisplay.textContent = `${average} ms`;
-                    
-                    // Reset for next test
-                    testArea.textContent = 'CLICK TO START';
-                    testArea.classList.remove('bg-apple-green', 'scale-105');
-                    testArea.classList.add('bg-apple-blue');
-                    
-                    // Update status indicator
-                    stateIndicator.textContent = 'Ready';
-                    stateIndicator.classList.remove('bg-apple-green', 'text-white', 'animate-pulse');
-                    stateIndicator.classList.add('bg-white');
-                }
-            });
-            
-            resetButton.addEventListener('click', function() {
-                // Reset all values
-                isRunning = false;
-                times = [];
-                bestTime = Infinity;
-                currentTimeDisplay.textContent = '0 ms';
-                bestTimeDisplay.textContent = '0 ms';
-                averageTimeDisplay.textContent = '0 ms';
-                testArea.textContent = 'CLICK TO START';
-                testArea.classList.remove('bg-apple-green', 'scale-105');
-                testArea.classList.add('bg-apple-blue');
-                
-                // Hide status indicator
-                stateIndicator.classList.add('hidden');
-            });
-            
-            submitScoreButton.addEventListener('click', function() {
-                if (bestTime < Infinity) {
-                    alert('Your score of ' + bestTime + 'ms has been submitted to the leaderboard!');
-                    // In a real implementation, this would send the score to a server
-                } else {
-                    alert('You need to complete at least one test before submitting a score');
-                }
-            });
-            
-            // Comment pagination functionality
-            const prevPageButton = document.getElementById('prev-page');
-            const nextPageButton = document.getElementById('next-page');
-            const commentsPage1 = document.getElementById('comments-page-1');
-            const commentsPage2 = document.getElementById('comments-page-2');
-            const currentPageIndicator = document.getElementById('current-page-indicator');
-            let currentPage = 1;
-            const totalPages = 2;
-            
-            function updatePaginationUI() {
-                // Update page indicator text
-                currentPageIndicator.textContent = `Page ${currentPage} of ${totalPages}`;
-                
-                // Enable/disable buttons based on current page
-                prevPageButton.disabled = currentPage === 1;
-                nextPageButton.disabled = currentPage === totalPages;
-                
-                // Show/hide comment pages
-                if (currentPage === 1) {
-                    commentsPage1.classList.remove('hidden');
-                    commentsPage2.classList.add('hidden');
-                } else if (currentPage === 2) {
-                    commentsPage1.classList.add('hidden');
-                    commentsPage2.classList.remove('hidden');
-                }
-            }
-            
-            prevPageButton.addEventListener('click', function() {
-                if (currentPage > 1) {
-                    currentPage--;
-                    updatePaginationUI();
-                }
-            });
-            
-            nextPageButton.addEventListener('click', function() {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    updatePaginationUI();
-                }
-            });
-            
-            // Initialize pagination UI
-            updatePaginationUI();
-        });
-    </script>
 </body>
 </html>
